@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Blogs</title>
+</head>
+<body>
+<a href="{{ url_for('home') }}">Go back to HomePage</a> <!--We can set Hyperlinks using Jinja and url_for function-->
+<!--We can set for loops or ifelse using Jinja's { and % notation}-->
+    {% for b in blogs: %} 
+        <h1>{{ b.get("id") }}</h1> <!-- Proceed with the usual way to print Python stuff-->
+        <h2>{{ b.get("title") }}</h2>
+    {% endfor %} <!-- It's compulsory to stop FOR LOOP using endfor. Ifelse requries endif-->
+</body>
+<footer>
+    <p>Copyrights {{year}} @Codanics</p>
+</footer>
+</html>

@@ -4,8 +4,9 @@
     <title>My Title</title>
 </head>
 <body>
-    <h1>Hi {{username}}</h1>
-    <p>Your age is {{userage}} and you're probably a {{usergender}}</p>
+<h1>Hello World!</h1>
+    <a href="{{ url_for('get_blog', num=5) }}">Visit the Blog</a> <!--We can set Hyperlinks using Jinja and url_for function-->
+    <a href="{{ url_for('name_guess', name='Arsalan') }}">Visit the Guessing Game</a> <!--We can set Hyperlinks using Jinja and url_for function-->
 </body>
 <footer>
     <p>Copyrights {{year}} @Codanics</p>

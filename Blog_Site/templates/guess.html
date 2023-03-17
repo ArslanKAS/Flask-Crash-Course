@@ -1,0 +1,14 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Title</title>
+</head>
+<body>
+    <h1>Hi {{username}}</h1> <!--Python Codes can be accessed using Curly braces-->
+    <p>Your age is {{userage}} and you're probably a {{usergender}}</p>
+    <a href="{{ url_for('home') }}">Go Back to HomePage</a> <!--We can set Hyperlinks using Jinja and url_for function-->
+</body>
+<footer>
+    <p>Copyrights {{year}} @Codanics</p>
+</footer>
+</html>
