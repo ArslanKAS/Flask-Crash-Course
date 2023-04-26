@@ -1,1 +1,1 @@
-# Flask Crash Course
+# Flask Crash Course for Beginners
